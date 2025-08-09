@@ -34,6 +34,6 @@ app.get('/',(req,res)=>{
     res.send('Hi i am working fine');
 });
 
-app.listen(port,()=>{
+app.listen(port,()=>{ 
     console.log('your app is running on: ',port)
 })
