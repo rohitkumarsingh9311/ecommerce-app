@@ -21,7 +21,9 @@ connectCloudinary();
 //middle ware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cors());
+app.use(cors({
+  origin: 'https://forever-frontend-xi-five.vercel.app',
+}));
 
 app.use('/api/user',userRouter);
 app.use('/api/product',ProductRouter);
